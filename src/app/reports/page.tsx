@@ -43,43 +43,43 @@ export default function ReportsPage() {
     {
       title: 'Top 10 Produtos em $',
       icon: TrendingUp,
-      onPress: () => handleNavigation('Top 10 Produtos por Valor'),
+      onPress: () => router.push('/reports/top-products-value'),
       description: 'Produtos mais vendidos por valor monetário'
     },
     {
       title: 'Top 10 Produtos em Qtde.',
       icon: BarChart3,
-      onPress: () => handleNavigation('Top 10 Produtos por Quantidade'),
+      onPress: () => router.push('/reports/top-products-quantity'),
       description: 'Produtos mais vendidos por quantidade'
     },
     {
       title: 'Top 10 Clientes em $',
       icon: Users,
-      onPress: () => handleNavigation('Top 10 Clientes por Valor'),
+      onPress: () => router.push('/reports/top-customers-value'),
       description: 'Clientes com maior valor de compras'
     },
     {
       title: 'Top 10 Clientes em Qtde.',
       icon: PieChart,
-      onPress: () => handleNavigation('Top 10 Clientes por Quantidade'),
+      onPress: () => router.push('/reports/top-customers-quantity'),
       description: 'Clientes com maior quantidade de compras'
     },
     {
       title: 'Variação preços min-max',
       icon: Activity,
-      onPress: () => handleNavigation('Variação de Preços'),
+      onPress: () => router.push('/reports/price-variation'),
       description: 'Análise de variação de preços dos produtos'
     },
     {
       title: 'Renegociação de Títulos',
       icon: FileBarChart,
-      onPress: () => handleNavigation('Renegociação de Títulos'),
+      onPress: () => router.push('/reports/title-renegotiation'),
       description: 'Relatório de renegociação de títulos'
     },
     {
       title: 'Análises IA',
       icon: Brain,
-      onPress: () => handleNavigation('Análises com IA'),
+      onPress: () => router.push('/reports/ai-analysis'),
       description: 'Insights e análises gerados por inteligência artificial'
     },
   ];
