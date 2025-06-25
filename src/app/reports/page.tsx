@@ -4,14 +4,15 @@ import Header from '@/components/Header';
 import { useAuth } from '@/hooks/useAuth';
 import { motion } from 'framer-motion';
 import {
-  Activity,
-  ArrowLeft,
-  BarChart3,
-  Brain,
-  FileBarChart,
-  PieChart,
-  TrendingUp,
-  Users
+    Activity,
+    ArrowLeft,
+    BarChart3,
+    Brain,
+    FileBarChart,
+    LineChart as LineChartIcon,
+    PieChart,
+    TrendingUp,
+    Users
 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
@@ -81,6 +82,12 @@ export default function ReportsPage() {
       icon: Brain,
       onPress: () => router.push('/reports/ai-analysis'),
       description: 'Insights e análises gerados por inteligência artificial'
+    },
+    {
+      title: 'Previsão de Vendas',
+      icon: LineChartIcon,
+      onPress: () => router.push('/reports/sales-forecast'),
+      description: 'Use IA para prever as vendas futuras'
     },
   ];
 
