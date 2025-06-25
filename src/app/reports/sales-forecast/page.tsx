@@ -178,7 +178,7 @@ export default function SalesForecastPage() {
                                     <tbody>
                                         {paginatedData.map((item, index) => (
                                             <tr key={index} className="border-b hover:bg-gray-50">
-                                                <td className="p-4 flex items-center">
+                                                <td className="p-4 flex items-center text-black">
                                                     <Calendar size={16} className="text-gray-500 mr-2" />
                                                     {item.ds}
                                                 </td>
